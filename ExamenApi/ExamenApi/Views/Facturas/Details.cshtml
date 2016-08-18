@@ -1,0 +1,66 @@
+﻿@model ExamenApi.Models.Facturas
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Facturas</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cliente.Cedula)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cliente.Cedula)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Inventario.Cantidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Inventario.Cantidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MontoTotal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MontoTotal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SubTotal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SubTotal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Detalle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Detalle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductosID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductosID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
